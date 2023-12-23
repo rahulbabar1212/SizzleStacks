@@ -3,11 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/homepage.css">
+    <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1>hello</h1>
+ <div class="outer-div">
+
+    <div class="div-nav" id="myTopnav">
+        <a href="123#" class="home">Home</a>
+        <a href="123#">Insights</a>
+        <a href="123#">Menu</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
     </div>
+
+    <div class="main-home">
+        <div class="left-home">
+ <p class="first-h"><span style="color: red; font-weight: 900;">Welcome</span> to</p>
+ <p class="second-h">The world of</p>
+ <p class="third-h">Testy & Fresh Food</p>
+ <p class="fourth-h">Indulge in the art of burger perfection - where every bite tells a savory story and every flavor is a masterpiece between the buns.</p>
+        </div>
+        <div class="right-home">
+ <img src="/images/sizzle.png" width="100%" class="img-right">
+        </div>
+    </div>
+
+ </div>
+
+
+
+
+ <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "div-nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "div-nav";
+      }
+    }
+    </script>
+
 </body>
 </html>
