@@ -213,6 +213,12 @@ body {
   flex-wrap: wrap;
 }
 
+.content-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .flip-card {
   background-color: transparent;
   width: 400px;
@@ -228,7 +234,7 @@ body {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .flip-card:hover .flip-card-inner {
@@ -245,20 +251,22 @@ body {
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: transparent;
+
 }
 
 .flip-text {
+  width: 90%;
   font-family: 'poppins';
   font-size: 13px;
   margin-top: 30px;
 }
 
 .flip-card-back {
-  background-color: white;
-  color: black;
+  background-color: red;
+  color: white;
   transform: rotateY(180deg);
+  font-family: 'Rajdhani';
 }
 
 .men-main-text {
@@ -329,13 +337,20 @@ body {
 
 .menu-burger-a {
   padding-bottom: 80px;
-  width: 400px;
+  width: 350px;
   height: 400px;
   background-color: white;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.bold-name {
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 .img-width {
@@ -345,9 +360,20 @@ body {
 }
 
 .burger-name {
+  display: flex;
+  justify-content: center;
   width: 100%;
   text-align: center;
   font-size: 12px;
+}
+
+.burger-name-a {
+  width: 90%;
+  font-size: 11px;
+}
+
+.price-text {
+  font-weight: bolder;
 }
 
 .burger-price {
@@ -361,19 +387,19 @@ body {
   justify-content: center;
 }
 
-.search-btn {
+.add-btn-cart {
   background-color: #FF0000;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border: none;
-  width: 20%;
-  padding: 15px;
-  margin-left: 10px;
+  width: 22%;
+  padding: 10px;
+  border-radius: 10px;
   font-weight: bolder;
   transition: 0.5s;
 }
 
-.search-btn:hover {
+.add-btn-cart:hover {
   transition: 0.5s;
   color: red;
   background-color: white;
@@ -552,6 +578,17 @@ body {
 
   }
 
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+  }
+
+  .flip-card-media {
+    width: 300px !important;
+    height: 230px !important;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -617,6 +654,25 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
 
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+  }
+
+  .flip-card-media {
+    width: 250px !important;
+    height: 180px !important;
+  }
+
+  .flip-text {
+    width: 90%;
+    font-family: 'poppins';
+    font-size: 11px;
+    margin-top: 5px;
   }
 
 }
