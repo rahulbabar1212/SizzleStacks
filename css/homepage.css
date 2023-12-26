@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'poppins';
   background-color: #D9D9D9;
+  cursor: default;
 }
 
 .outer-div {
@@ -47,6 +48,7 @@ body {
 
 .left-home {
   width: 50%;
+  cursor: default;
 
 }
 
@@ -406,7 +408,11 @@ body {
   transform: scale(1.01);
 }
 
-
+.logo-img{
+  position: absolute;
+  top: 2%;
+  left: 2.5%;
+}
 
 
 
@@ -470,7 +476,7 @@ body {
   .img-right {
     width: 350px;
     margin-left: -90px;
-    margin-top: -3px;
+    margin-top: 30px;
   }
 
   .first-h {
@@ -607,7 +613,9 @@ body {
     background-color: white;
     transform: scale(1.01);
   }
-  
+  .logo-img{
+   display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -658,7 +666,7 @@ body {
   .img-right {
     width: 250px;
     margin-left: -60px;
-    margin-top: -3px;
+    margin-top: 30px;
   }
 
   .d-f-text {
@@ -711,5 +719,7 @@ body {
     background-color: white;
     transform: scale(1.01);
   }
-  
+  .logo-img{
+  width: 100px;
+  }
 }
