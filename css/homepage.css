@@ -589,6 +589,25 @@ body {
     width: 300px !important;
     height: 230px !important;
   }
+  .search-btn-a {
+    background-color: #FF0000;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    width: 20%;
+    padding-block: 10px;
+    font-weight: bolder;
+    transition: 0.5s;
+    margin-inline: 15px;
+  }
+  
+  .search-btn-a:hover {
+    transition: 0.5s;
+    color: red;
+    background-color: white;
+    transform: scale(1.01);
+  }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -674,5 +693,23 @@ body {
     font-size: 11px;
     margin-top: 5px;
   }
-
+  .search-btn-a {
+    background-color: #FF0000;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+    width: 30%;
+    padding-block: 10px;
+    font-weight: bolder;
+    transition: 0.5s;
+    margin-inline: 15px;
+  }
+  
+  .search-btn-a:hover {
+    transition: 0.5s;
+    color: red;
+    background-color: white;
+    transform: scale(1.01);
+  }
+  
 }
